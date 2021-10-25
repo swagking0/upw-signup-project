@@ -1,0 +1,39 @@
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Start Date</th>
+        <th>Service</th>
+        <th>Active</th>
+        <th>Details</th>
+    </tr>
+    {% for user in all_users %}
+    <tr>
+        <td>{{user.id}}</td>
+        <td>{{user.get_full_name}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.date_joined}}</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    {% endfor %}
+</table>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Menu Name</th>
+        <th>URL</th>
+        <th>Edit</th>
+    </tr>
+    {% for product in all_products %}
+    <tr>
+        <td>{{product.id}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.url}}</td>
+        <td></td>
+    </tr>
+    {% endfor %}    
+</table>
