@@ -65,6 +65,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Home',
       template: './src/pages/index.html',
+      favicon: './src/assets/icon/favicon-32x32.png',
       inject: true,
       chunks: ['index', 'component', 'vendor'],
       filename: 'index.html'
@@ -72,6 +73,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'SignUp',
       template: './src/pages/signup.html',
+      favicon: './src/assets/icon/favicon-32x32.png',
       inject: true,
       chunks: ['signup', 'component', 'vendor'],
       filename: 'signup.html'

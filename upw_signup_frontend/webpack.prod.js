@@ -28,7 +28,7 @@ module.exports = {
   // how to write the compiled files to disk
   // https://webpack.js.org/concepts/output/
   output: {
-    filename: '[name].[contenthash].bundle.js',
+    filename: 'js/[name].[contenthash].bundle.js',
     path: buildPath,
     assetModuleFilename: 'images/[name][hash][ext][query]',
     clean: true
@@ -80,6 +80,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Home',
       template: './src/pages/index.html',
+      favicon: './src/assets/icon/favicon-32x32.png',
       inject: true,
       chunks: ['index', 'component', 'vendor'],
       filename: 'index.html'
@@ -87,12 +88,13 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'SignUp',
       template: './src/pages/signup.html',
+      favicon: './src/assets/icon/favicon-32x32.png',
       inject: true,
       chunks: ['signup', 'component', 'vendor'],
       filename: 'signup.html'
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].[contenthash].css',
+      filename: 'css/[name].[contenthash].css',
       chunkFilename: '[id].[contenthash].css'
     })
   ],

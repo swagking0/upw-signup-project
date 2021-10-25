@@ -10,6 +10,7 @@ html {
 }
 
 body {
+    height: 1600px;
     margin: 0;
     padding: 0;
     font-family: 'Public Sans', sans-serif;
@@ -25,6 +26,11 @@ body {
 
 a, a:visited, a:hover {
     text-decoration: none;
+}
+
+h2, h3 {
+    margin: 1.875rem;
+    line-height: 1.2;
 }
 
 // Spacing
@@ -45,20 +51,40 @@ a, a:visited, a:hover {
         justify-content: center;
     }
 
+    &-jc-a {
+        justify-content: space-around;
+    }
+
     &-ai-c {
         align-items: center;
+    }
+
+    &-fd-c {
+        flex-direction: column;
     }
 }
 
 // Buttons 
 .button {
     padding: 1rem 1.875rem;
-    border-radius: 50px;
+    background: $white;
     cursor: pointer;
-    border: 0;
+    border: 1px solid transparent;
+    border-color: $darkBlue;
     border-radius: 0.25rem;
     color: $darkBlue;
     font-weight: 400;
+    transition: border-color 300ms ease-in-out, color 300ms ease-in-out;
+
+    &.highlight {
+        background: $darkBlue;
+        color: $white;
+    }
+
+    &:hover {
+        border-color: $darkerBlue;
+        color: $darkerBlue;
+    }
 }
 
 // Visibility

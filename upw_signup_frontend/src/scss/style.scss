@@ -1,6 +1,6 @@
-@import "variables";
-@import "mixins";
-@import "animations";
+@import "common/variables";
+@import "common/mixins";
+@import "common/animations";
 
-@import "globals";
-@import "navbar";
+@import "common/globals";
+@import "common/navbar";
