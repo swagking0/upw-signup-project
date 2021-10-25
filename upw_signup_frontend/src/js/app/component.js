@@ -23,4 +23,23 @@ btnMenuHamburger.addEventListener('click', function(){
     }
 });
 
+function setactivenavlink() {
+    const currentLocation = location.href;
+    const navItems = document.querySelectorAll('.header__link');
+
+    navItems.forEach(function(element) {
+
+        if(element.href === currentLocation) {
+            element.classList.add('active');
+        } else {
+            element.classList.remove('active');
+        }
+    });
+}
+
+window.addEventListener('load', 
+  function() { 
+    setactivenavlink();
+  }, false);
+
 /********/

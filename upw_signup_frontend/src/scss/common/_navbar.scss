@@ -102,4 +102,28 @@
             }
         }
     }
+
+    &__link {
+        &.active {
+            color: $darkerBlue;
+
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                height: 5px;
+                left: 0;
+                right: 0;
+                bottom: -30px;
+                background: $darkerBlue;
+                opacity: 1;
+            }
+
+            @include breakpoint-down(medium) {
+                &::before {
+                    opacity: 0;
+                }
+            }
+        }
+    }
 }
