@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="50" viewBox="0 0 150 50">
+  <g id="Group_167" data-name="Group 167" transform="translate(-117 -63)">
+    <rect id="Rectangle_648" data-name="Rectangle 648" width="150" height="50" transform="translate(117 63)" fill="#fff"/>
+    <g id="Group_161" data-name="Group 161" transform="translate(42.789 11.641)">
+      <g id="Group_150" data-name="Group 150" transform="translate(132.797 59.298)">
+        <text id="AMZSoL" transform="translate(0.414 20)" fill="#1d2a38" font-size="18" font-family="Montserrat-ExtraBold, Montserrat" font-weight="800"><tspan x="0" y="0">AMZ</tspan><tspan y="0" font-family="Montserrat-Regular, Montserrat" font-weight="400">SoL</tspan></text>
+        <text id="A_Product_of_J-wire_Co._LTD." data-name="A Product of J-wire Co. LTD." transform="translate(4.414 30.664)" fill="#0d4e9a" font-size="5" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">A Product of J-wire Co. LTD.</tspan></text>
+      </g>
+      <g id="amzsol_logo" data-name="amzsol logo" transform="translate(84 56)">
+        <g id="Layer_1" data-name="Layer 1">
+          <rect id="Rectangle_548" data-name="Rectangle 548" width="4.998" height="5.16" transform="translate(11.931 26.745)" fill="#fff"/>
+          <rect id="Rectangle_549" data-name="Rectangle 549" width="4.96" height="10.319" transform="translate(19.123 19.062)" fill="#fff"/>
+          <rect id="Rectangle_550" data-name="Rectangle 550" width="4.953" height="9.99" transform="translate(26.294 16.523)" fill="#fff"/>
+          <path id="Path_55" data-name="Path 55" d="M37.3,22.38l-3.1,4.279-.258-.156-4.958-2.968-.679-.387-1.555,1.97-4.972,6.3-2.187,2.8-2.35,2.975-2.622-1.243-3.79-1.8L9.91,35.5l.149.224A15.323,15.323,0,0,0,38.042,27.1a15.105,15.105,0,0,0-.74-4.72Z" transform="translate(-3.179 -7.636)" fill="#1f5196"/>
+          <path id="Path_56" data-name="Path 56" d="M37.846,22.527,34.294,27.37v6.48H29.343V24.5l-.964-.564-1.243,1.569V36.675H22.163v-4.9l-2.18,2.717v4.849h-5v-2.52l-3.987-2-.937,1.358-.55-.38.24-.418.943-1.4,6.416,3.02L28.181,23.071h0l5.889,3.444,3.2-4.374h0Z" transform="translate(-3.051 -7.389)" fill="#fff"/>
+          <path id="Path_57" data-name="Path 57" d="M38.992,19.96A19.263,19.263,0,0,0,19.625.8,19.264,19.264,0,0,0,.25,19.956,19.407,19.407,0,0,0,27.73,37.347l7.356,3.627-1.453-7.8a18.926,18.926,0,0,0,5.359-13.21Zm-35.366,0a16,16,0,1,1,16,15.816,15.913,15.913,0,0,1-16-15.816Z" transform="translate(-0.08 -0.257)" fill="#202937"/>
+          <path id="Path_58" data-name="Path 58" d="M43.469,0l-.835,11.121-3.763-2.6-4.259,5.818-.36.489h-.007l-3.2,4.317-5.889-3.4-.007.013L14.066,29.615l-.041-.02-.985-.463-5.386-2.52-.924,1.334-.272.4-.143.2L2.241,34.414,0,32.9l4.849-7,1.868-2.695,6.554,3.07,11.22-14.023,2.839,1.676,2.948,1.736,3-4.1,3.362-4.585L33.165,4.572Z" fill="#202937"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

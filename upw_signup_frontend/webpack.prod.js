@@ -19,6 +19,9 @@ module.exports = {
   // https://webpack.js.org/concepts/entry-points/#multi-page-application
   entry: {
     index: './src/js/app/index.js',
+    signup: './src/js/app/signup.js',
+
+    component: './src/js/app/component.js',
     vendor: './src/js/vendor/vendor.js'
   },
 
@@ -27,6 +30,7 @@ module.exports = {
   output: {
     filename: '[name].[contenthash].bundle.js',
     path: buildPath,
+    assetModuleFilename: 'images/[name][hash][ext][query]',
     clean: true
   },
 
@@ -74,10 +78,18 @@ module.exports = {
   // https://webpack.js.org/concepts/plugins/
   plugins: [
     new HtmlWebpackPlugin({
+      title: 'Home',
       template: './src/pages/index.html',
       inject: true,
-      chunks: ['index', 'vendor'],
+      chunks: ['index', 'component', 'vendor'],
       filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'SignUp',
+      template: './src/pages/signup.html',
+      inject: true,
+      chunks: ['signup', 'component', 'vendor'],
+      filename: 'signup.html'
     }),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css',
