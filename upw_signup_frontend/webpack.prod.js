@@ -14,7 +14,7 @@ module.exports = {
 
   // This option controls if and how source maps are generated.
   // https://webpack.js.org/configuration/devtool/
-  devtool: 'source-map',
+  devtool: false,
 
   // https://webpack.js.org/concepts/entry-points/#multi-page-application
   entry: {
@@ -83,7 +83,16 @@ module.exports = {
       favicon: './src/assets/icon/favicon-32x32.png',
       inject: true,
       chunks: ['index', 'component', 'vendor'],
-      filename: 'index.html'
+      filename: 'index.html',
+      minify: {
+        collapseWhitespace: true,
+        keepClosingSlash: true,
+        removeComments: true,
+        removeRedundantAttributes: false,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true
+      }
     }),
     new HtmlWebpackPlugin({
       title: 'SignUp',
@@ -91,7 +100,16 @@ module.exports = {
       favicon: './src/assets/icon/favicon-32x32.png',
       inject: true,
       chunks: ['signup', 'component', 'vendor'],
-      filename: 'signup.html'
+      filename: 'signup.html',
+      minify: {
+        collapseWhitespace: true,
+        keepClosingSlash: true,
+        removeComments: true,
+        removeRedundantAttributes: false,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true
+      }
     }),
     new MiniCssExtractPlugin({
       filename: 'css/[name].[contenthash].css',

@@ -7,7 +7,7 @@ module.exports = {
 
   // This option controls if and how source maps are generated.
   // https://webpack.js.org/configuration/devtool/
-  devtool: 'eval-cheap-module-source-map',
+  devtool: 'inline-source-map',
 
   // https://webpack.js.org/concepts/entry-points/#multi-page-application
   entry: {
@@ -68,7 +68,10 @@ module.exports = {
       favicon: './src/assets/icon/favicon-32x32.png',
       inject: true,
       chunks: ['index', 'component', 'vendor'],
-      filename: 'index.html'
+      filename: 'index.html',
+      minify: {
+        removeRedundantAttributes: false
+      }
     }),
     new HtmlWebpackPlugin({
       title: 'SignUp',
@@ -76,7 +79,10 @@ module.exports = {
       favicon: './src/assets/icon/favicon-32x32.png',
       inject: true,
       chunks: ['signup', 'component', 'vendor'],
-      filename: 'signup.html'
+      filename: 'signup.html',
+      minify: {
+        removeRedundantAttributes: false
+      }
     })
   ]
 }

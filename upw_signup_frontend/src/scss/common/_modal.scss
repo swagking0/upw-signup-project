@@ -63,18 +63,8 @@
             color: $darkBlue;
         }
 
-        label[for="email"]::after,
-        label[for="password"]::after,
-        label[for="name"]::after,
-        label[for="address"]::after,
-        label[for="coupon"]::after,
-        label[for="confirm_password"]::after {
-            content: '*';
-            color: $darkerBlue;
-        }
-
-        input[type="text"],
-        input[type="password"] {
+        input[type=password],
+        input[type=text] {
             margin-top: 5px;
             display: block;
             width: 100%;
@@ -84,7 +74,7 @@
             border-radius: 5px;
         }
 
-        input[type="checkbox"] {
+        input[type=checkbox] {
             margin-right: 5px;
         }
 
