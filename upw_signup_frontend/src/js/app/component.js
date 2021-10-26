@@ -21,7 +21,7 @@ btnMenuHamburger.addEventListener('click', function(){
             element.classList.add('fade-out');
         });
     }
-});
+}, false);
 
 function setactivenavlink() {
     const currentLocation = location.href;
@@ -37,9 +37,9 @@ function setactivenavlink() {
     });
 }
 
-window.addEventListener('load', 
-  function() { 
-    setactivenavlink();
-  }, false);
-
 /********/
+
+// Window
+window.addEventListener('load', function() { 
+    setactivenavlink();
+}, false);

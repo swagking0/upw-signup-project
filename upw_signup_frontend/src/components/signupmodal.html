@@ -1,0 +1,41 @@
+<div id="modalSignUp" class="modal container">
+    <span data-type="modalcloser" data-target="#modalSignUp" class="modal__overlay"></span>
+    <div class="modal__main">
+        <a type="button" data-type="modalcloser" data-target="#modalSignUp" class="modal__closebtn">&times;</a>
+        <form class="modal__form">
+            <h2>Sign Up</h2>
+            <div class="modal__formelement">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter name" required />
+            </div>
+            <div class="modal__formelement">
+                <label for="address">Address</label>
+                <input type="text" id="address" placeholder="Enter Address" required />
+            </div>
+            <div class="modal__formelement">
+                <label for="coupon">Coupon</label>
+                <input type="text" id="coupon" placeholder="Enter Coupon" required />
+            </div>
+            <div class="modal__formelement">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter email" required />
+            </div>
+            <div class="modal__formelement">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password" required />
+            </div>
+            <div class="modal__formelement">
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" id="confirm_password" placeholder="Confirm password" required />
+            </div>
+            <div class="modal__formelement">
+                <button type="submit">Sign up</button>
+            </div>
+            <div class="modal__formelement">
+                <div class="flex flex-jc-a flex-ai-c">
+                    <a type="button" data-type="modalswitcher" data-present="#modalSignUp" data-target="#modalSignIn">Sign in</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -21,10 +21,13 @@
             <h3>A Product of J-wire Co.Ltd.</h3>
 
             <div class="signup__wrapper">
-                <a href="" class="button highlight">Sign In</a>
-                <a href="" class="button">Sign Up</a>
+                <a type="button" data-type="modalopener" data-target="#modalSignIn" class="button highlight">Sign In</a>
+                <a type="button" data-type="modalopener" data-target="#modalSignUp" class="button">Sign Up</a>
             </div>
         </div>
+        <%= require('../components/signinmodal.html?template').default %>
+        <%= require('../components/signupmodal.html?template').default %>
+        <%= require('../components/forgotpasswordmodal.html?template').default %>
     </section>
 
     <!--footer-->

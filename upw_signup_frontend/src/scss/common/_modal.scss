@@ -1,0 +1,135 @@
+.modal {
+    &__overlay {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+        background-image: linear-gradient($darkBlue, transparent);
+        visibility: hidden;
+    }
+
+    &__main {
+        position: absolute;
+        top: -150%;
+        left: 50%;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1.25);
+        width: 380px;
+        padding: 20px 30px;
+        background: $white;
+        box-shadow: 2px 2px 5px 5px $darkBlue;
+        border-radius: 10px;
+        transition: top 0ms ease-in-out 200ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 200ms ease-in-out 0ms;
+    }
+
+    &__closebtn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+        background: $darkBlue;
+        color: $white;
+        text-align: center;
+        line-height: 20px;
+        border-radius: 15px;
+        cursor: pointer;
+
+        &:hover {
+            color: $darkerBlue;
+            border: 1px solid $darkerBlue;
+        }
+    }
+
+    &__form {
+        h2 {
+            text-align: center;
+            color: $darkerBlue;
+            margin: 10px 0px 20px;
+            font-size: 25px;
+        }
+    }
+
+    &__formelement {
+        margin: 15px 0px;
+
+        label {
+            font-size: 14px;
+            color: $darkBlue;
+        }
+
+        label[for="email"]::after,
+        label[for="password"]::after,
+        label[for="name"]::after,
+        label[for="address"]::after,
+        label[for="coupon"]::after,
+        label[for="confirm_password"]::after {
+            content: '*';
+            color: $darkerBlue;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            margin-top: 5px;
+            display: block;
+            width: 100%;
+            padding: 10px;
+            outline: none;
+            border: 1px solid $darkerBlue;
+            border-radius: 5px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button {
+            width: 100%;
+            height: 40px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            background: $darkBlue;
+            color: $white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        a {
+            font-size: 15px;
+            color: $lightBlue;
+            text-decoration: none;
+            font-weight: 400;
+            cursor: pointer;
+        }
+
+        button:hover {
+            color: $darkerBlue;
+            border: 1px solid $darkerBlue;
+        }
+
+        a:hover {
+            color: $darkerBlue;
+        }
+    }
+
+    &.modalopen {
+        .modal__overlay {
+            visibility: visible;
+        }
+
+        .modal__main {
+            top: 50%;
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+            transition: top 0ms ease-in-out 0ms,
+            opacity 200ms ease-in-out 0ms,
+            transform 200ms ease-in-out 0ms;
+        }
+    }
+}
